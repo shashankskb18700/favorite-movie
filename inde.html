@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>my Favorite movies</title>
+  <link rel="stylesheet" href="hello.css">
+  <script src="high.js" defer></script>
+</head>
+<body>
+  <div  id="backdrop"></div>
+  <header>
+    <h1>Favorite movie</h1>
+    <button class="btn" id="bb">Add movies</button>
+  </header>
+  <!--id is used for scripting identification and name is for server-side-->
+ 
+  <div id='form' class="power">
+    <label for=MovieName class="invisible"> Movie Title </label>
+    <input type="text" name="MovieName" id="MovieName">
+    <label for="img" class="invisible">Image URL</label>
+    <input type="text" name="img" id="img">
+    <label for="rating">Rating</label>
+    <input type="number" step = "1" max="5" min="1" name="rating" id="rating">
+      <div id='btn--passive'>
+        <button id="cancel">Cancel</button>
+        <button id="add">Add movie</button> 
+       
+      </div>
+  </div> 
+
+  <section id='para-g'>
+    <p >Your movie data base ></p>
+
+  
+  </section>
+  
+  <div id="list">
+    <div id="stt">
+      <div id="mov"></div>
+      
+      <div id="huff">
+
+        <div  id="ratin" ></div>
+        <div id="stars"><p>/5 stars</p></div>
+      </div>
+    </div>
+    <div id="real">
+       <img  id='love' src=img.value alt="tree" >
+    </div>
+  <p></p>
+  </div>
+  
+ <div id='clone'>
+
+ </div>
+
+
+
+</body>
+</html>

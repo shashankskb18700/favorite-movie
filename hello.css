@@ -1,0 +1,322 @@
+*{margin: 0; 
+padding: 0;
+box-sizing: border-box;}
+html{
+  font-family:fantasy;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center ;
+  width: 100%;
+  height: 70px;
+  background:cyan;
+  color:cadetblue;
+  padding-left: 18px;
+  font-size: 18px;
+
+}
+.btn{
+  padding: 8px 6px;
+  margin-right: 18px;
+  border:none;
+  border-radius: 5px;
+  font-size: 15px;
+  color: orchid;
+  border: none;
+  font-family: inherit;
+  
+}
+
+.btn:hover{
+  background:cadetblue;
+  color: black;
+}
+
+section{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 69%;
+  height: 80px;
+  background:lightcyan;
+  margin: auto;
+  margin-top:40px;
+  font-size: 21px;
+  border-radius: 3px;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.26);
+};
+#form{
+  display: flex; 
+  align-content: center;
+  justify-content: center;
+  font-weight: bold;
+  margin: 0.5rem 0;
+  color: #464646;
+
+  width: auto;
+  
+  /* position: fixed; */
+  z-index: 100;
+  background: grey;
+  border-radius: 10px;
+  width: 60%;
+  top: 30vh;
+  /* left: 10%; */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+ 
+}
+
+
+label{
+  display: flex;
+  align-content:flex-start;
+  justify-content:flex-start;
+  font-weight: bold;
+  margin: 0.5rem 0;
+  color: #464646;
+  padding: 0 15px;
+
+  width: auto;
+} 
+
+ input {
+  display: flex;
+  align-content:center;
+  justify-content: center;
+  font: inherit;
+  border: 1px solid #ccc;
+  padding: 0.4rem 0.2rem;
+  margin: auto;
+  color: #383838;
+  width: 90%;
+  
+}
+input:focus{
+  background: cadetblue;
+  color: white;
+}
+#btn--passive{
+  display: flex;
+  align-content: center;
+  justify-content: flex-end;
+  margin: 10px 0 0px;
+  padding-right: 10px;
+  font: 15px;
+  border: none;
+  background-color:white;
+  padding:10px;
+  
+}
+
+#cancel{
+  margin-right: 20px;
+  padding:10px;
+  background:lightgoldenrodyellow;
+  font: inherit;
+  
+}
+#cancel:hover{
+  background: lightcoral;
+}
+#add{ margin-right: 20px;
+  padding:10px;
+  background: lightcyan;
+  font: inherit;
+  }
+
+#add:hover{
+  background: lightskyblue;
+}
+
+#form{
+  display: none;
+  position: fixed;
+  width: 80%;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  left: 10%;
+  top: 30vh;
+  border-radius: 10px;
+  animation:forwards 0.5s ease-out forwards;
+  z-index: 100;
+}
+
+#backdrop{
+  display: none;
+  position:fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.75);
+  z-index: 15;
+}
+
+#list{
+  /* display: flex; */
+  
+  /* align-content: center;
+  justify-content:center; */
+  /* flex-direction: column; */
+  /* left: 6px; */
+  margin-left: 20%;
+  margin-right: 20%;
+
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  border:3px double blue;
+  
+  
+   /* display:;
+  width: 50%;
+  border: ;
+ 
+  align-content: center;
+  justify-content: space-between;
+  position:;
+  left: 20px;
+  right: 50%;
+  margin: auto;
+  margin-left: 40%;
+  margin-right: 50%; */
+
+}
+
+
+#mov{
+
+  /* float: right; */
+  /* margin-right: 50%; */ 
+  font-weight:bold;
+  font-size: 20px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
+  color: black;
+  
+  width: fit-content;
+  height: fit-content;
+}
+#ratin{
+  /* float: right; */
+  /* font-weight: bold;
+  font-size: 20px;
+  color: green;
+  width: 40px;
+  padding-left: 20%; */
+  /*height: 100px; */
+  /* background:lightsalmon;
+  margin-top: 10px; */
+}
+#huff{
+  display: flex;
+  font-weight: bold;
+  font-size: 20px;
+  color: green;
+  width: 100px;
+  margin-top: 10px;
+  background:lightsalmon;
+  padding-left: 10px;
+  border-radius: 20%;
+}
+#stt{
+  display: flex;
+  
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; 
+  position: absolute;;
+  float: right;
+  /*bcs of this 50 and 40 % we have to add media query */
+  left: 40%;
+  right: 35%;
+  padding:20px 0;
+  
+  /* padding-right: 50px; */
+
+}
+#clone{
+     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+     margin-left: 20%;
+     margin-right: 20%;
+     margin-top: 10px;
+     
+     
+     
+ 
+}
+#clone div{
+   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  margin-top: 5px;
+  
+}
+#clone #stt{
+  /* display: flex;
+  width: fit-content;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; 
+  position: absolute;;
+  float: right;
+  left: 60%;
+  right: 30%;
+  padding:20px 0; */
+}
+#clone #huff{
+  /* display: flex;
+  font-weight: bold;
+  font-size: 20px;
+  color: green;
+  width: 100px; */
+  /* margin-top: 10px; */
+  /* background:lightsalmon;
+  padding-left: 10px;*/
+
+} 
+#clone #mov{
+  /* margin: 0px;
+  margin-bottom:0;
+  */
+  box-shadow: none; 
+}
+#clone #huff{
+  /* margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
+  width: 100px;
+  padding-top: 0; */
+  box-shadow: none;
+}
+#clone #stt{
+  /* margin-bottom: 40px; */
+  box-shadow: none;
+}
+#clone #stars{
+  box-shadow: none;
+}
+#clone #ratin{
+  box-shadow: none;
+}
+/*--------------------------image of movie--------------------------*/
+#real{
+  
+  
+  color: red;
+  background:gold;
+  width:120px;
+  height:110px;
+  border-radius: 20%;
+}
+#love{
+  
+  
+  width:100%;
+  height:100%;
+  object-fit: fill;
+  border-radius: 20%;
+}
+ 
+ @media (max-width:820px) {
+  #stt{
+    left: 42%;
+    right: 10%;
+  }
+} 
